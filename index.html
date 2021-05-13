@@ -1,17 +1,21 @@
 <!DOCTYPE html>
+<html>
 <title>Simple Intrest Calculator</title>
     <head>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <script src="../../Downloads/vftvk-Simple-Interest-Calculator-master/script.js"></script>
+    <link rel="stylesheet" href="../../Downloads/vftvk-Simple-Interest-Calculator-master/style.css">
     </head>
     <body>
         <div class="maindiv">
             
         <h1>Simple Interest Calculator</h1>
+			
 
         Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="range"  id="rate" step="0.25" min="1" max="20" value="10.25" > 
-        <span id="rate_val">10.50%</span> <br/>
+       Intrest Rate
+			<input type="range" id="rate" min="1" max="20" step="0.25" value="10.25"; onChange="amount.value=rate.value"> <output id="amount" for="rate">10.25</output>
+        
+			<select onChange="myRate"></select><br/>
 
         No. of years <select name="dropdown">
   
@@ -33,14 +37,17 @@
         
     
         <button onclick="compute()">Compute Interest</button>
-    <span id="result"  >
+    <span id="result">
 
     </span>  
+	
+			<input type="reset" value="Reset">
     
 
     <footer>
         &#169; This Calculator belongs to Sally Hughes
     </footer>
+			
     </div>
     </body>
 
